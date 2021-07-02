@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TaskService } from '../task.service';
 
 @Component({
   selector: 'app-newTask',
@@ -6,16 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['new-task.page.scss']
 })
 export class NewTaskPage implements OnInit {
+  newTask = {
+    title: '',
+    desc: '',
+    done: false
+  };
+  constructor(private taskService: TaskService) {}
 
-newTask = {
-title: '',
-desc: '',
-done: false
-};
-  constructor() {}
-  
-ngOnInit() {
+  ngOnInit() {}
 
-}
-
+  addTask() {
+    // add task to taskList using taskService
+    this.taskService.addTask(this.newTask);
+  }
 }

@@ -7,7 +7,9 @@ import { TaskService } from './task.service';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page implements OnInit {
-  taskList = [
+  taskList = [];
+  
+  /*[
     {
       title: 'عنوان المهمة الأولى',
       desc: 'وصف المهمة الأولى',
@@ -23,7 +25,8 @@ export class Tab3Page implements OnInit {
       desc: 'وصف المهمة الثالثة',
       done: false
     }
-  ];
+  ];*/
+  
   // initialize taskService in constructor
   constructor(private taskService: TaskService) {}
 

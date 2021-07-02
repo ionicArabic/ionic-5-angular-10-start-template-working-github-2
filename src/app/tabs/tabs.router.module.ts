@@ -63,10 +63,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    IonicModule,
-    RouterModule.forChild(routes)
-  ],
+  imports: [IonicModule, RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
 export class TabsPageRoutingModule {}

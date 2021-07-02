@@ -4,7 +4,7 @@
       قائمة المھام
     </ion-title>
     <ion-buttons>
-      <ion-button slot="end" [routerLink]="['/new-task'] ">
+      <ion-button slot="end" [routerLink]="['new-task']">
         <ion-icon slot="icon-only" name="add"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -20,7 +20,7 @@
         <p>{{item.desc}}</p>
       </ion-label>
       <ion-buttons slot="end">
-        <ion-button color="danger">
+        <ion-button color="danger" (click)="deleteTask(item)">
           <ion-icon slot="icon-only" name="remove-circle"></ion-icon>
         </ion-button>
       </ion-buttons>
