@@ -1,9 +1,41 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab Three
+      قائمة المھام
     </ion-title>
+    <ion-buttons>
+      <ion-button slot="end">
+        <ion-icon slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-checkbox></ion-checkbox>
+      <ion-label>
+        <h2>عنوان المهمة ١</h2>
+        <p>وصف المھمة ١</p>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button color="danger">
+          <ion-icon slot="icon-only" name="remove-circle"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    <ion-item>
+      <ion-checkbox></ion-checkbox>
+      <ion-label>
+        <h2>عنوان المهمة ٢</h2>
+        <p>وصف المھمة ٢</p>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button color="danger">
+          <ion-icon slot="icon-only" name="remove-circle"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+</ion-content>
