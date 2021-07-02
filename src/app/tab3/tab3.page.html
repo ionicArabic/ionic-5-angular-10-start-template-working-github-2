@@ -13,23 +13,11 @@
 
 <ion-content>
   <ion-list>
-    <ion-item>
-      <ion-checkbox></ion-checkbox>
+    <ion-item *ngFor="let item of taskList">
+      <ion-checkbox [(ngModel)]="item.done"></ion-checkbox>
       <ion-label>
-        <h2>عنوان المهمة ١</h2>
-        <p>وصف المھمة ١</p>
-      </ion-label>
-      <ion-buttons slot="end">
-        <ion-button color="danger">
-          <ion-icon slot="icon-only" name="remove-circle"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-    </ion-item>
-    <ion-item>
-      <ion-checkbox></ion-checkbox>
-      <ion-label>
-        <h2>عنوان المهمة ٢</h2>
-        <p>وصف المھمة ٢</p>
+        <h2>{{item.title}}</h2>
+        <p>{{item.desc}}</p>
       </ion-label>
       <ion-buttons slot="end">
         <ion-button color="danger">

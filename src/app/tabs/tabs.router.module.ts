@@ -32,6 +32,10 @@ const routes: Routes = [
           {
             path: '',
             loadChildren: '../tab3/tab3.module#Tab3PageModule'
+          },
+          {
+            path: 'new-task',
+            loadChildren: '../tab3/new-task/new-task.module#NewTaskModule'
           }
         ]
       },
